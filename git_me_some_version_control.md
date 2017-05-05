@@ -1,7 +1,10 @@
 # Git Me Some Version Control (Memo)      
-https://laracasts.com/series/git-me-some-version-control/episodes/1    
+https://laracasts.com/series/git-me-some-version-control/episodes/1     
+  
+推荐免费的git客户端软件： SourceTree   
+Free Git and Hg Client for Mac and Windows: SourceTree  
 
-### Section 01 Say Hi To Git 9:07  
+### Section 01 Say Hi To Git 9:07   
 install git : 可以使用homebrew来安装   
 ````  
 git config --global user.name = 'ashu';
@@ -33,7 +36,16 @@ git reset --hard commitNumber... // 代码和commitNumber都变了，小心使�
 
 
 ### Section 05 Branching 10:14  
+````  
+开发新功能需要新建一个branch，尽量少的影响主branch(master)
+git checkout -b new-branch-name // 创建新 branch -b => branch
+....
+git checkout branch-name // switch branch
+git merge branch-name // merge another branch to current branch
 
+git branch -d new-branch-name //完成后，记得把new-branch-name 的branch删除
+
+````  
 
 ### Section 06 Handling Merge Conflicts 5:02  
 
