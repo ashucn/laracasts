@@ -42,6 +42,13 @@ https://laracasts.com/series/sublime-text-mastery
 		expand_fqcn ->  f9, 自动填充 class 完整路径  
 		find_use -> f10 php文件自动顶部填充 class use路径  
 		insert_php_constructor_property -> f7 自动设置 __construct 方法   
+````  
+[
+	{ "keys": ["f9"], "command": "expand_fqcn" },
+	{ "keys": ["f10"], "command": "find_use" },
+	{ "keys": ["f7"], "command": "insert_php_constructor_property" },
+]
+````  
   
 ### Section 08 - Better PHPUnit Workflow  
 [安装phpunit](https://phpunit.de/getting-started.html)    
