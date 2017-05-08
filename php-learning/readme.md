@@ -1,5 +1,7 @@
+#Note for PHP Tutorial    
+  
 
-# [The PHP Practitioner](https://laracasts.com/series/php-for-beginners/episodes/)  
+## [The PHP Practitioner](https://laracasts.com/series/php-for-beginners/episodes/1)  
 PUBLISHED ON JUN. 30TH 2016   
 
 ### 01 Step 1: Get PHP Installed  3:51  
