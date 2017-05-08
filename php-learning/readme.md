@@ -1,1 +1,86 @@
 video source: https://laracasts.com/series/php-for-beginners/episodes/
+
+###01 Step 1: Get PHP Installed  3:51  
+````  
+brew search php
+brew install homebrew/php/php71
+php -v
+````  
+
+###02 Step 2: Install a Proper Code Editor  9:21
+首要推荐的编辑器为： sublime text 3    
+ST插件：  
+````  
+- SimplePHPUnit  // 系统要先安装PHPUnit (composer globe require PHPunit)  
+- PHP GETTERS AND SETTERS    
+- SublimeLinter  
+- SublimeLinter-php   
+- AdvancedNewFile   
+- Origami   
+- php companion
+	(以下快捷键需要安装插件后在ST Key Binding中设置)  
+  	-- expand_fqcn ->  f9, 自动填充 class 完整路径  
+	-- find_use -> f10 php文件自动顶部填充 class use路径  
+	-- insert_php_constructor_property -> f7 自动设置 __construct 方法   
+````  
+  
+###03 Step 3: Variables  7:37
+
+php -h // 显示php帮助信息  
+php -S localhost:8887 // run with php build in web server  
+  
+###04 Step 4: PHP and HTML  12:38
+1. 关于php闭合代码  
+如果文件全部是php代码，不用php闭合代码 " ?> ",    
+如果有html+php代码，则使用php闭合代码。  
+
+2. 注意用户输入的安全   
+使用输入过滤，例如 htmlspecialchars() (相反的，转回字符用 htmlspecialchars_decode() )   
+````  
+<?= "Hello, " . htmlspecialchars($_GET['name']); ?>
+````  
+" <?php echo " 等同于 " <?= "    
+
+###05 Step 5: Separate PHP Logic From Presentation  3:46
+
+
+
+###06 Step 6: Understanding Arrays  7:44
+
+###07 Step 7: Associative Arrays  12:04
+
+###08 Step 8: Booleans  10:44
+
+###09 Step 9: Conditionals  6:58
+
+###10 Step 10: Functions  7:49
+
+###11 MySQL 101  16:18
+
+###12 Classes 101  16:10
+
+###13 Intro to PDO  15:16
+
+###14 PDO Refactoring and Collaborators  17:39
+
+###15 Hide Your Secret Passwords  6:27
+
+###16 Make a Router  24:19
+
+###17 Dry Up Your Views  7:02
+
+###18 Array Filtering  13:31
+
+###19 Forms, Request Types, and Routing  13:17 
+
+###20 Dynamic Inserts With PDO  12:24 
+
+###21 Composer Autoloading  4:38 
+
+###22 Your First DI Container  7:04 
+
+###23 Refactoring to Controller Classes  17:34 
+
+###24 Switch to Namespaces  14:52 
+
+###25 Meet Your Batteries Included Framework: Laravel  17:26
