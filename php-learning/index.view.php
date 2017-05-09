@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>test</title>
+    <title>test</title>
 </head>
 <body>
-	<h1>
-		<?= "Hello " . htmlspecialchars($_GET['name']) . ', ' . $greeting; ?>
-	</h1>
+<h1>
+    <ul>
+        <?php foreach ($names as $name) :?>
+        <li><?= $name; ?></li>
+        <?php endforeach;?>
+    </ul>
+</h1>
 </body>
 </html>

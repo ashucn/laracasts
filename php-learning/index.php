@@ -1,5 +1,10 @@
 <?php
 
-$greeting = '欢迎光临';
+$names = [
+    'ashu',
+    'kadi',
+    'may',
+];
+
 
 require 'index.view.php';

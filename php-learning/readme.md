@@ -46,10 +46,23 @@ php -S localhost:8887 // run with php build in web server
 " <?php echo " 等同于 " <?= "    
 
 ### 05 Step 5: Separate PHP Logic From Presentation  3:46
-
-
-
+/
+  
 ### 06 Step 6: Understanding Arrays  7:44
+
+````
+$names = [
+  'ashu',
+  'kadi',
+  'may',
+];
+// index.view.php 
+<ul>
+    <?php foreach ($names as $name) :?>
+    <li><?= $name; ?></li>
+    <?php endforeach;?>
+</ul>
+````  
 
 ### 07 Step 7: Associative Arrays  12:04
 
