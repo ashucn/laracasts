@@ -1,9 +1,10 @@
 <?php
 
-$names = [
-    'ashu',
-    'kadi',
-    'may',
+$task = [
+    'title' => 'ashu',
+    'due' => 'today',
+    'assigned_to' => 'may',
+    'done' => false,
 ];
 
 

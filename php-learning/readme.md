@@ -65,10 +65,48 @@ $names = [
 ````  
 
 ### 07 Step 7: Associative Arrays  12:04
+````  
+$person = [
+    'name' => 'ashu',
+    'age' => 20,
+];
+$person['career'] = 'web developer';
+
+$animals = ['dog', 'cat'];
+$animals[] = 'elephant'; // ['dog', 'cat', 'elephant']
+
+var_dump($person); // 打印array需要用var_dump, echo只打印字符串
+unset($person['age']); // 删掉array的一个item
+
+// index.view.php 
+<ul>
+    <?php foreach ($person as $key => $value) :?>
+    <li><?= $key; ?> : <?= $value; ?></li>
+    <?php endforeach;?>
+</ul>
+````  
+
 
 ### 08 Step 8: Booleans  10:44
+````  
+$task = [
+    'title' => 'ashu',
+    'due' => 'today',
+    'assigned_to' => 'may',
+    'done' => false,
+];
 
+// index.view.php 
+<ul>
+    <li>Name: <?= $task['title'] ?></li>
+    <li>Due Date: <?= $task['due'] ?></li>
+    <li>Person Responsible: <?= $task['assigned_to'] ?></li>
+    <li>Done: <?= $task['done'] ?'done':'incomplete' ?></li>
+</ul>
+````  
+ 
 ### 09 Step 9: Conditionals  6:58
+ 
 
 ### 10 Step 10: Functions  7:49
 
