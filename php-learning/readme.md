@@ -106,13 +106,83 @@ $task = [
 ````  
  
 ### 09 Step 9: Conditionals  6:58
- 
+/
 
 ### 10 Step 10: Functions  7:49
+/
 
 ### 11 MySQL 101  16:18
+安装mysql  
+````  
+brew search mysql
+brew install mysql
+````  
 
+创建db和tables  
+````  
+create database test;
+create table todos ();
+````  
+db client softwart 推荐：  
+navicat, sequelpro, datagrip    
+  
 ### 12 Classes 101  16:10
+
+创建class, properties, __construct, methods...  
+创建 objects（自动执行 __construct ）  
+````
+index.php
+  class Task {
+  
+      public $des;
+      public $completed = false; // protected: class生成的对象不能直接访问，只内部class内部访问
+  
+      public function __construct($des)
+      {
+          $this->des = $des;
+  
+      }
+  
+      /**
+       * @return mixed
+       */
+      public function complete()
+      {
+          return $this->completed = true;
+      }
+  
+      public function isComplete()
+      {
+          return $this->completed;
+      }
+  }
+  
+  $tasks = [
+      new Task('lib'),
+      new Task('store'),
+  ];
+  
+  $tasks[1]->complete();
+  
+  ----------
+  // index.view.php
+  
+<ul>
+    <?php foreach ($tasks as $task) : ?>
+        <li>
+            <?php if ($task->completed) : ?>
+                <strike><?= $task->des ?></strike>
+            <?php else: ?>
+
+                <?= $task->des ?>
+            <?php endif; ?>
+
+        </li>
+
+    <?php endforeach; ?>
+</ul>
+
+````  
 
 ### 13 Intro to PDO  15:16
 

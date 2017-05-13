@@ -5,12 +5,19 @@
 </head>
 <body>
 <h1>Task for the day</h1>
-
 <ul>
-    <li>Name: <?= $task['title'] ?></li>
-    <li>Due Date: <?= $task['due'] ?></li>
-    <li>Person Responsible: <?= $task['assigned_to'] ?></li>
-    <li>Done: <?= $task['done'] ?'done':'incomplete' ?></li>
+    <?php foreach ($tasks as $task) : ?>
+        <li>
+            <?php if ($task->completed) : ?>
+                <strike><?= $task->des ?></strike>
+            <?php else: ?>
+
+                <?= $task->des ?>
+            <?php endif; ?>
+
+        </li>
+
+    <?php endforeach; ?>
 </ul>
 
 </body>
