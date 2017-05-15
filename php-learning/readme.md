@@ -190,6 +190,43 @@ index.php
 ### 14 PDO Refactoring and Collaborators  17:39
 
 ### 15 Hide Your Secret Passwords  6:27
+将敏感信息单独提出  
+```` 
+// config.php 
+
+return [
+  'database' => [
+    'dbname' => 'tasks',
+    'username' => 'homestead',
+    'password' => '',
+    'connection' => 'mysql:host=127.0.0.1:33060',
+    'options' => [
+      // http://php.net/manual/en/pdo.setattribute.php
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+  ],
+];
+
+// Connetcion.php 
+class Connection {
+  // static方法可以不用创建类的对象直接使用的方法Connection::make();
+  public static function make ($config){
+    try {
+        // return new PDO('mysql:host=127.0.0.1:33060;dbname=tasks', 'homestead', 'secret');
+
+        return new PDO(
+            $config['connection'].';dbname='.$config['dbname'], 
+            $config['username'], 
+            $config['password'],
+            $config['options']
+          );
+    } catch (PDOException $e) {
+        die($e->getMessage());
+    }
+  }
+}
+
+````    
 
 ### 16 Make a Router  24:19
 
