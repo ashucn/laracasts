@@ -1,8 +1,7 @@
 <?php
+// 载入 bootstrap, config project
+$query = require 'core/bootstrap.php';//db instance
 
-$query = require 'bootstrap.php';//db instance
+$router = new Router;
 
-$tasks = $query->selectAll('todos');
-
-require 'index.view.php';
-
+require Router::load('routes.php')->direct(Request::uri()); // chain

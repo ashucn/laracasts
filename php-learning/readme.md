@@ -230,6 +230,8 @@ class Connection {
 
 ### 16 Make a Router  24:19
 
+首先，整理文件夹结构  
+
 ### 17 Dry Up Your Views  7:02
 
 ### 18 Array Filtering  13:31
