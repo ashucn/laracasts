@@ -184,7 +184,8 @@ index.php
 
 ````  
 
-### 13 Intro to PDO  15:16
+### 13 Intro to PDO  15:16  
+
 
 ### 14 PDO Refactoring and Collaborators  17:39
 

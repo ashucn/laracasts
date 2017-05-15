@@ -9,10 +9,10 @@
     <?php foreach ($tasks as $task) : ?>
         <li>
             <?php if ($task->completed) : ?>
-                <strike><?= $task->des ?></strike>
+                <strike><?= $task->description ?></strike>
             <?php else: ?>
 
-                <?= $task->des ?>
+                <?= $task->description ?>
             <?php endif; ?>
 
         </li>
