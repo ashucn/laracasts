@@ -1,20 +1,13 @@
 <div class="container">
 <?php require('partials/head.php') ?>
-<h1>Task for the day</h1>
-<ul>
-    <?php foreach ($tasks as $task) : ?>
-        <li>
-            <?php if ($task->completed) : ?>
-                <strike><?= $task->description ?></strike>
-            <?php else: ?>
+<h1>Submit Your Name</h1>
 
-                <?= $task->description ?>
-            <?php endif; ?>
-
-        </li>
-
-    <?php endforeach; ?>
-</ul>
-
+<form action="/names" method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <button type="submit">Submit</button>
+    </div>
+</form>
 <?php require('partials/footer.php') ?>
 </div>
