@@ -5,7 +5,7 @@ class Router {
 
 	public static function load ($filename)
 	{
-		$router = new static; // 等同于 new Router;
+		$router = new static; // 等同于 new self 或 new Router;
 		require $filename;
 
 		return $router;

@@ -235,6 +235,35 @@ class Connection {
 ### 17 Dry Up Your Views  7:02
 
 ### 18 Array Filtering  13:31
+array_filter()  
+````  
+$unpublishedPosts = array_filter($posts, function ($post) {
+
+  return ! $post->published;
+
+});
+
+```` 
+
+array_map(callback, arr1) // modify   
+array_column(arr1, fieldname) // 获取某一个属性的所有值    
+
+把对象换成 array
+````  
+$posts = [
+  new Post('ashu1', true),
+  new Post('ashu2', true),
+  new Post('ashu3', true),
+  new Post('ashu4', false),
+];
+
+
+$posts = array_map(function ($post) {
+  return (array) $post;
+}, $posts);
+````  
+
+
 
 ### 19 Forms, Request Types, and Routing  13:17 
 
