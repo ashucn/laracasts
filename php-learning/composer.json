@@ -1,0 +1,18 @@
+{
+    "name": "php/tutorial",
+    "description": "Php tutorial.",
+    "keywords": ["php"],
+      "authors": [{
+        "name": "Ashucn",
+        "email": "ashucn@gmail.com"
+      }],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+    },
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
+}

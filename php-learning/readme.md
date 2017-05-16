@@ -270,6 +270,29 @@ $posts = array_map(function ($post) {
 ### 20 Dynamic Inserts With PDO  12:24 
 
 ### 21 Composer Autoloading  4:38 
+````  
+// composer.json 
+{
+    "name": "php/tutorial",
+    "description": "Php tutorial.",
+    "keywords": ["php"],
+      "authors": [{
+        "name": "Ashucn",
+        "email": "ashucn@gmail.com"
+      }],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+    },
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
+}
+
+````  
+
 
 ### 22 Your First DI Container  7:04 
 
