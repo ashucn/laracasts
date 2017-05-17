@@ -1,5 +1,8 @@
 <?php 
-// Global db Statement
+// Global functions and db Statement
+// 
+use App\Core\App;
+
 App::bind('config', require 'config.php');
 $config = App::get('config');
 // die(var_dump(App::get('config')));
@@ -12,7 +15,7 @@ App::bind('database',
 
 function view ($name, $data=[]) {
 	extract($data);
-	return require "views/{$name}.view.php";
+	return require "app/views/{$name}.view.php";
 }
 
 function redirect($path) {

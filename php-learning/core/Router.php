@@ -1,5 +1,7 @@
 <?php 
 
+namespace App\Core;
+
 class Router {
 	protected $routes = [
 		'GET' => [],
@@ -46,7 +48,8 @@ class Router {
      * @param string $action
      */
 	protected function callAction ($controller, $action){
-
+		$controller = "App\\Controllers\\{$controller}";
+		// die(var_dump($controller));
         $controller = new $controller;
 
 		if (! method_exists($controller, $action)) {

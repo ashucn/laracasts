@@ -1,5 +1,8 @@
 <?php 
 // FOR DI
+// 
+namespace App\Core;
+
 class App {
 
 	protected static $registry = [];
