@@ -16,7 +16,7 @@
       <ul class="nav navbar-nav">
         <li><a href="/" title="Lorum ipsum dolor sit amet">home</a></li>
         <li><a href="/about" title="Lorum ipsum dolor sit amet">about</a></li>
-        <li><a href="/about/culture" title="Lorum ipsum dolor sit amet">culture</a></li>
+        <li><a href="/users" title="Lorum ipsum dolor sit amet">users</a></li>
         <li><a href="/contact" title="Aliquam tincidunt mauris eu risus">contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

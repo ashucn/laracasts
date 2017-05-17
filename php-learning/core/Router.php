@@ -28,9 +28,33 @@ class Router {
 	public function direct ($uri, $requestType){
 		// $uri : about/culture
 		if ( array_key_exists($uri, $this->routes[$requestType]) ) {
-			return $this->routes[$requestType][$uri]; 
+			// PagesController@home
+			
+			return $this->callAction(
+				// 三个点就是把array变成参数 PHP5.6的功能
+				...explode('@', $this->routes[$requestType][$uri])
+			);
 		}
 		
 		throw new Exception('No route defined for this URI.');
+	}
+
+    /**
+     * Load and call the relevant controller action.
+     *
+     * @param string $controller
+     * @param string $action
+     */
+	protected function callAction ($controller, $action){
+
+        $controller = new $controller;
+
+		if (! method_exists($controller, $action)) {
+			throw new Exception(
+				"{$controller} does not respond to the {$action} action."
+				);
+		}
+
+		return ($controller)->$action();
 	}
 }

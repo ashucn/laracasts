@@ -1,5 +1,5 @@
 # Note for PHP Tutorial    
-  
+https://github.com/laracasts/The-PHP-Practitioner-Full-Source-Code   
 
 ## [The PHP Practitioner](https://laracasts.com/series/php-for-beginners/episodes/1)  
 PUBLISHED ON JUN. 30TH 2016   
@@ -297,7 +297,8 @@ $posts = array_map(function ($post) {
 ### 22 Your First DI Container  7:04 
 
 ### 23 Refactoring to Controller Classes  17:34 
-
+创建新文件，需要执行 
+composer dump-autoload   
 ### 24 Switch to Namespaces  14:52 
 
 ### 25 Meet Your Batteries Included Framework: Laravel  17:26
