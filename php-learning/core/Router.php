@@ -58,6 +58,6 @@ class Router {
 				);
 		}
 
-		return ($controller)->$action();
+		return $controller->$action();
 	}
 }
