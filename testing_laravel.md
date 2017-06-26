@@ -6,6 +6,12 @@ So you have an existing application, and you'd love to begin writing tests for i
 
 ````  
 composer create-project laravel/laravel app dev-develop
+
+// Create a test in the Feature directory...
+php artisan make:test UserTest
+
+// Create a test in the Unit directory...
+php artisan make:test UserTest --unit
 ````  
 
 ### EPISODE 2 - 13:09
