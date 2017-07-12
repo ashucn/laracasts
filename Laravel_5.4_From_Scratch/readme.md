@@ -1,21 +1,30 @@
+I am a software developer, love cooking, movies and travel. I'd like to meet someone who likes chinese coulture. Very nice to meet you! 
+
 https://laracasts.com/series/laravel-from-scratch-2017
 ----  
 
 ### Laravel Installation and Composer
 Before we can review how incredible and flexible Laravel is, we, of course, must first learn how to install it. In this episode, we'll review all necessary prerequisites, and then setup Composer on our machine.
-
-laravel new blog -dev // 创建新项目  
+  
+````  
+laravel new blog --dev // 创建新项目  
 laravel -V //查看laravel版本  
-
+````  
+  
 ## EPISODE 2 ● RUN TIME 4:58
 ### Basic Routing and Views
 Your first step, when learning Laravel, should be to visit your main routes/routes.php file. Here, we may define any number of routes for our application. Or, in other words, when the user visits a particular URL, what logic should we trigger?
 
+````  
+php artisan serve --port=8090 // 启动php内置web服务器
+````  
+
 ## EPISODE 3 ● RUN TIME 4:22
 ### Laravel Valet is Your Best Friend
-We'll get back to the PHP in just a few minutes, but let's t
+We'll get back to the PHP in just a few minutes, but let's take a brief pause to learn about Laravel Valet and how incredibly useful it is. What if you could create a new project with laravel new project, and then immediately view it in the browser by visiting "project.dev"? How cool would that be?
 
-Sorry Windows folks, this one is exclusively for Mac users. Don't worry: only this ## episode is Mac-specific### .
+Sorry Windows folks, this one is exclusively for Mac users. Don't worry: only this episode is Mac-specific.
+
 ## EPISODE 4 ● RUN TIME 2:36
 ### Database Setup and Sequel Pro
 In this episode, we'll review the process of creating a new database in MySQL, connecting to it (via our .env config), and then setting up any database GUI, such as Sequel Pro.
