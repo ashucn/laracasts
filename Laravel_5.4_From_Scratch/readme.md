@@ -4,6 +4,9 @@ https://laracasts.com/series/laravel-from-scratch-2017
 ### Laravel Installation and Composer
 Before we can review how incredible and flexible Laravel is, we, of course, must first learn how to install it. In this episode, we'll review all necessary prerequisites, and then setup Composer on our machine.
 
+laravel new blog -dev // 创建新项目  
+laravel -V //查看laravel版本  
+
 ## EPISODE 2 ● RUN TIME 4:58
 ### Basic Routing and Views
 Your first step, when learning Laravel, should be to visit your main routes/routes.php file. Here, we may define any number of routes for our application. Or, in other words, when the user visits a particular URL, what logic should we trigger?

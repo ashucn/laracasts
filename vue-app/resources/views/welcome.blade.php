@@ -37,8 +37,7 @@
 
           <section>
               <div class="container">
-                  
-            <router-view></router-view>
+              <router-view></router-view>
               </div>
           </section>
         </div>
