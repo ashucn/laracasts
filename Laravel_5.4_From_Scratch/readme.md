@@ -33,6 +33,10 @@ In this episode, we'll review the process of creating a new database in MySQL, c
 ### Pass Data to Your Views
 Admittedly, so far, we've needed to do a bit of boring infrastructure work. But the silver lining is that you now have everything you need to work in a professional environment. You should have PHP 7.1, MySQL, Brew, Composer, and Valet or Homestead installed. Now, we can get back to our Laravel application, and learn about passing data to any view.
 
+````  
+composer require phpspec/phpspec
+````  
+
 ## EPISODE 6 ● RUN TIME 9:52
 ### Working With the Query Builder
 We can use Laravel's query builder to construct fluent database queries with PHP. No longer are you forced to write fragile and difficult-to-read SQL queries as strings. Let me show you how it works!
