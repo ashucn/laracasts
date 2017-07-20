@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Status;
-use App\Model\User;
+use App\Comment;
 use Illuminate\Http\Request;
 
-class StatusController extends Controller
+class CommentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class StatusController extends Controller
      */
     public function index()
     {
-        return Status::with('user')->latest()->get();
+        //
     }
 
     /**
@@ -36,19 +35,16 @@ class StatusController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, ['body' => 'required']);
-        $status =  User::find(1)->statuses()->create($request->only(['body']));
-
-        return $status->load('user');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Status  $status
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function show(Status $status)
+    public function show(Comment $comment)
     {
         //
     }
@@ -56,10 +52,10 @@ class StatusController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Status  $status
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Status $status)
+    public function edit(Comment $comment)
     {
         //
     }
@@ -68,10 +64,10 @@ class StatusController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Status  $status
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Status $status)
+    public function update(Request $request, Comment $comment)
     {
         //
     }
@@ -79,10 +75,10 @@ class StatusController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Status  $status
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Status $status)
+    public function destroy(Comment $comment)
     {
         //
     }
