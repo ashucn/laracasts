@@ -62,10 +62,16 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+
+        auth()->login($user); // 注册成功后自动登录。
+        // send a welcome email
+        \Mail::to($user)->send(new App\Mail\Welcome);
+
+        return $user;
     }
 }
